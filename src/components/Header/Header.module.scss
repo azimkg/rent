@@ -1,0 +1,21 @@
+.header {
+  @apply flex justify-between m-0 m-auto max-w-6xl;
+  .header__logo {
+    @apply w-28;
+  }
+  .header__logoImg {
+    @apply max-w-full;
+  }
+  .header__right {
+    @apply flex justify-between items-center;
+  }
+  .user__btn {
+    @apply border border-gray-800 px-2 py-1 cursor-pointer bg-white font-extrabold;
+  }
+  .header__autorization {
+    @apply w-8 h-6 ml-4 cursor-pointer;
+  }
+  .autorization__link {
+    @apply max-w-full max-h-full;
+  }
+}

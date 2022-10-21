@@ -1,0 +1,36 @@
+.modal {
+  @apply justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none;
+  .modal__block {
+    @apply relative w-96 my-6 mx-auto max-w-3xl transition-all;
+  }
+  .modal__content {
+    @apply pt-14 px-8 pb-10 relative border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none;
+    .modalClose {
+      @apply absolute top-4 right-4 w-6 h-6 cursor-pointer;
+    }
+    .welcome {
+      @apply mb-5 text-center font-black text-2xl;
+    }
+    .form {
+      @apply flex flex-col;
+      .formBlock {
+        @apply flex flex-col;
+      }
+      .formLabel {
+        @apply text-sm font-normal mb-1;
+      }
+      .input {
+        @apply h-9 w-full px-3 py-1 outline-none text-xs border-gray-300 border-t border-b;
+      }
+      .formBlock {
+        @apply mb-4;
+      }
+    }
+  }
+}
+.buttonParent {
+  @apply h-10 mt-3 px-5 text-lg bg-sky-600 text-white cursor-pointer outline-none whitespace-nowrap text-center border-none;
+}
+.modal__inner {
+  @apply opacity-25 fixed inset-0 z-40 bg-black;
+}
